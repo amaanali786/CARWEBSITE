@@ -1,0 +1,716 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Staatliches&display=swap');
+
+:root {
+    --color-black: #3d566f;
+    --color-white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 1400px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+}
+
+.page1 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.page1 h1 {
+    font-family: 'Staatliches', sans-serif;
+    font-size: 16vw;
+    position: absolute;
+    letter-spacing: 0.18em;
+    text-align: center;
+    color: var(--color-black);
+    opacity: 0.3;
+    pointer-events: none;
+    top: 10vh;
+    left: 2vw;
+    margin-left: 0.75vw;
+}
+
+.top {
+    width: 100%;
+    height: 60vh;
+    background: var(--color-white);
+}
+
+.footer-up {
+    width: 100%;
+    height: 40vh;
+    background-color: var(--color-black);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background: var(--color-white);
+    box-shadow:  7px 7px 28px var(--color-white),
+             -7px -7px 28px var(--color-white);
+    padding: 0 2vw;
+}
+
+.logo {
+    color: var(--color-black);
+}
+
+.nav-link ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 4vw;
+}
+
+.nav-link ul a {
+    color: var(--color-black);
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    font-size: 1.1vw;
+}
+
+.nav-link ul a:hover {
+    color: var(--color-white);
+    background-color: var(--color-black);
+}
+
+.btn {
+    padding: 0.3vw 2vw;
+    color: var(--color-black);
+    border: 2px solid var(--color-black);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.content {
+    position: absolute;
+    top: 15vw;
+    right: 0;
+    padding-right: 6.5vw;
+    text-align: right;
+    color: var(--color-black);
+}
+
+.content h2 {
+    font-size: 2vw;
+    font-weight: 200;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.content h3 {
+    font-size: 3.5vw;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.car {
+    position: absolute;
+    top: 10vw;
+    left: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3.5px;
+}
+
+.car span {
+    color: var(--color-black);
+    font-weight: 500;
+    font-size: 1vw;
+    transform: rotate(-90deg);
+}
+
+.small-car {
+    max-width: 32%;
+    height: auto;
+    filter: brightness(80%);
+}
+
+@media screen and (max-width: 768px) {
+    .small-car {
+        display: none; 
+    }
+
+    .content {
+        top: 10vw; 
+        padding-right: 2vw; 
+    }
+
+    .footer-content {
+        top: 60%; 
+        padding-right: 2vw;
+        width: 100%;
+    }
+
+    .About {
+        padding: 1vw;
+    }
+
+    .nav-link ul {
+        display: none; 
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: var(--color-white);
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-link ul.active {
+        display: flex;
+    }
+
+    .nav-link ul a {
+        font-size: 3vw; 
+    }
+
+    .logo h2, .nav-link ul, .back {
+        transform: translateX(0);
+        opacity: 1; 
+    }
+}
+
+.tata-small-logo {
+    width: 20vw;
+    height: auto;
+}
+
+.small-car {
+    width: 400px;
+    height: auto;
+    filter: brightness(100%);
+}
+
+.image img {
+    position: absolute;
+    top: 5rem;
+    left: 2rem;
+    width: 800px;
+    height: auto;
+}
+
+.footer-content {
+    position: absolute;
+    top: 55%;
+    right: 0;
+    padding-right: 6.5vw;
+    text-align: right;
+    width: 100vw;
+    color: var(--color-white);
+}
+
+.footer-content p {
+    font-weight: 200;
+    text-align: justify;
+    margin-bottom: 2vw;
+    margin-top: -18vh;
+    margin-left: 50vw;
+}
+
+.btn-primary {
+    color: var(--color-black);
+    background-color: var(--color-white);
+    /* box-shadow:  4px 4px 2px #0b0c0e,
+             -4px -4px 2px #687480; */
+    border: none;
+}
+
+.About span {
+    color: var(--color-black);
+    font-weight: 600;
+    font-size: 1vw;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    color: var(--color-black);
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    font-size: 1.1vw;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--color-white);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: var(--color-black);
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    font-size: 1vw;
+}
+
+.dropdown-content a:hover {
+    background-color: #3d566f;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .dropdown-content {
+        top: 100%; 
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: none;
+    }
+
+    .dropdown:hover .dropdown-content.active {
+        display: block;
+    }
+}
+
+.mobile-menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--color-black);
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list li {
+    margin-right: 4vw;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: var(--color-white);
+        text-align: center;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .nav-list li {
+        margin: 0;
+        padding: 1.5vw;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon.active .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    .mobile-menu-icon.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .mobile-menu-icon.active .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}
+
+@media only screen and (max-width: 100px) {
+    .nav-link {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .nav-list.active {
+        display: block;
+    }
+}
+.white-logo {
+    margin-top: 16vh;
+    width: 20%;
+    height: auto;
+    margin-right: 72vw;
+    margin-left: 2vw;
+}
+
+.page-harrier {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.top-harrier {
+    width: 100%;
+    height: 60vh;
+    background: var(--color-white);
+}
+
+.footer-up-harrier {
+    width: 100%;
+    height: 40vh;
+    background-color: var(--color-black);
+}
+
+.content-harrier {
+    position: absolute;
+    top: 15vw;
+    right: 0;
+    padding-right: 6.5vw;
+    text-align: right;
+    color: var(--color-black);
+}
+
+.content-harrier h2 {
+    font-size: 2vw;
+    font-weight: 200;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.content-harrier p {
+    font-size: 1.2vw;
+    font-weight: 400;
+}
+
+.image-harrier img {
+    position: absolute;
+    top: 5rem;
+    left: 2rem;
+    width: 800px;
+    height: auto;
+}
+
+.footer-content-harrier {
+    position: absolute;
+    top: 55%;
+    right: 0;
+    padding-right: 6.5vw;
+    text-align: right;
+    width: 100vw;
+    color: var(--color-white);
+}
+
+.footer-content-harrier p {
+    font-weight: 200;
+    text-align: justify;
+    margin-bottom: 2vw;
+    margin-top: -18vh;
+    margin-left: 50vw;
+}
+
+.harrier-image {
+    max-width: 52%;
+    height: auto;
+    filter: brightness(80%);
+}
+/* Add styling for TATA Safari page */
+.page-safari {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.top-safari {
+    width: 100%;
+    height: 60vh;
+    background: var(--color-white);
+}
+
+.footer-up-safari {
+    width: 100%;
+    height: 40vh;
+    background-color: var(--color-black);
+}
+
+.header-safari {
+}
+
+.content-safari {
+    position: absolute;
+    top: 15vw;
+    right: 0;
+    padding-right: 6.5vw;
+    text-align: right;
+    color: var(--color-black);
+}
+
+.content-safari h2 {
+    font-size: 2vw;
+    font-weight: 200;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.content-safari p {
+    font-size: 1.2vw;
+    font-weight: 400;
+}
+
+.image-safari img {
+    position: absolute;
+    top: 5rem;
+    left: 2rem;
+    width: 800px;
+    height: auto;
+}
+
+.footer-content-safari {
+    position: absolute;
+    top: 55%;
+    right: 0;
+    padding-right: 6.5vw;
+    text-align: right;
+    width: 100vw;
+    color: var(--color-white);
+}
+
+.footer-content-safari p {
+    font-weight: 200;
+    text-align: justify;
+    margin-bottom: 2vw;
+    margin-top: -18vh;
+    margin-left: 50vw;
+}
+
+.safari-image {
+    max-width: 52%;
+    height: auto;
+    filter: brightness(80%);
+}
+
+/* Add styling for TATA Nexon page */
+.page-nexon {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.top-nexon {
+    width: 100%;
+    height: 60vh;
+    background: var(--color-white);
+}
+
+.footer-up-nexon {
+    width: 100%;
+    height: 40vh;
+    background-color: var(--color-black);
+}
+
+.header-nexon {
+}
+
+.content-nexon {
+    position: absolute;
+    top: 15vw;
+    right: 0;
+    padding-right: 6.5vw;
+    text-align: right;
+    color: var(--color-black);
+}
+
+.content-nexon h2 {
+    font-size: 2vw;
+    font-weight: 200;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.content-nexon p {
+    font-size: 1.2vw;
+    font-weight: 400;
+}
+
+.image-nexon img {
+    position: absolute;
+    top: 5rem;
+    left: 2rem;
+    width: 800px;
+    height: auto;
+}
+
+.footer-content-nexon {
+    position: absolute;
+    top: 55%;
+    right: 0;
+    padding-right: 6.5vw;
+    text-align: right;
+    width: 100vw;
+    color: var(--color-white);
+}
+
+.footer-content-nexon p {
+    font-weight: 200;
+    text-align: justify;
+    margin-bottom: 2vw;
+    margin-top: -18vh;
+    margin-left: 50vw;
+}
+
+.nexon-image {
+    max-width: 52%;
+    height: auto;
+    filter: brightness(80%);
+}
+
+/* Add styling for TATA Altroz page */
+.page-altroz {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.top-altroz {
+    width: 100%;
+    height: 60vh;
+    background: var(--color-white);
+}
+
+.footer-up-altroz {
+    width: 100%;
+    height: 40vh;
+    background-color: var(--color-black);
+}
+
+.header-altroz {
+    /* Add styling for header if needed */
+}
+
+.content-altroz {
+    position: absolute;
+    top: 15vw;
+    right: 0;
+    padding-right: 6.5vw;
+    text-align: right;
+    color: var(--color-black);
+}
+
+.content-altroz h2 {
+    font-size: 2vw;
+    font-weight: 200;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.content-altroz p {
+    font-size: 1.2vw;
+    font-weight: 400;
+}
+
+.image-altroz img {
+    position: absolute;
+    top: 5rem;
+    left: 2rem;
+    width: 800px;
+    height: auto;
+}
+
+.footer-content-altroz {
+    position: absolute;
+    top: 55%;
+    right: 0;
+    padding-right: 6.5vw;
+    text-align: right;
+    width: 100vw;
+    color: var(--color-white);
+}
+
+.footer-content-altroz p {
+    font-weight: 200;
+    text-align: justify;
+    margin-bottom: 2vw;
+    margin-top: -18vh;
+    margin-left: 50vw;
+}
+
+.altroz-image {
+    max-width: 52%;
+    height: auto;
+    filter: brightness(80%);
+}
+/* Footer styles */
+footer {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    padding: 2vw 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-details,
+.social-media {
+    flex: 1;
+    padding: 0 2vw;
+}
+
+.contact-details h3,
+.social-media h3 {
+    font-size: 1.5vw;
+    margin-bottom: 1vw;
+}
+
+.contact-details p {
+    font-size: 1vw;
+    margin-bottom: 0.5vw;
+}
+
+.social-media a {
+    display: block;
+    color: var(--color-black);
+    text-decoration: none;
+    margin-bottom: 0.5vw;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
